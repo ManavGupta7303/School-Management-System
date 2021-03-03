@@ -1,0 +1,587 @@
+import os
+board={'9':' ','8':' ','7': ' ','6':' ','5':' ','4':' ','3':' ','2':' ','1':' '}
+def clear():
+    os.system('cls')
+
+def printboard(board):
+        print(" " * 10,board['9'] + '9' + ' ' + ' |' + board['8'] + '8' + ' ' + ' |' + board['7'] + '7' + ' ' )
+        print(" " * 10,' ' + '------' + '------')
+        print(" " * 10,board['6'] + '6' + ' ' + ' |' + board['5'] + '5' + ' ' + ' |' + board['4'] + '4' + ' ' )
+        print(" " * 10,' ' + '------' + '------')
+        print(" " * 10,board['3'] + '3' + ' ' + ' |' + board['2'] + '2' + ' ' + ' |' + board['1'] + '1' + ' ')
+
+
+
+
+print("LET'S PLAY TIC TAC TOE!!!!!!!!!")
+print("TO PLAY THE GAME, THE FOLLOWING ARE THE RULES:-")
+print("1. I WILL AS THE NAME OF PLAYER 1 (X).")
+print("2. THEN I WILL AS THE NAME OF PLAYER 2 (O).")
+print("3. THEN I WILL SHOW YOU THE BOARD WITH NUMBERS ON IT.")
+print("4. WHEN I AS YOU TO TELL ME THE POSITION YOU WANT TO YOU X OR O TO AND YOU REPLY WITH THE NUMBERS GIVEN IN THE BLOCK")
+print("5. AFTER EVERY TURN, THE REFERENCE BOARD WITH THE NUMBERS WILL BE PRINTED FOR YOUR REFERENCE.")
+print("6. IF YOU TRY TO PLACE AN ALREADY FILLED PLACE, THE GAME WILL BE CLOSED AND DECLARED NULL AND VOID.")
+
+while True:
+    
+
+    def play():
+        PLAYER1 = input("ENTER THE NAME OF PLAYER 1 TO PLAY WITH X:- ")
+        PLAYER2 = input("ENTER THE NAME OF PLAYER 2 TO PLAY WITH O:- ")
+        
+        print("THE NAME OF PLAYER 1 IS " , PLAYER1)
+        print("THE NAME OF PLAYER 2 IS " , PLAYER2)
+        
+        print("LET'S BEGIN WITH THE GAME")
+        x=" "
+        y=" "
+        z=" "
+        a=" "
+        b=" "
+        c=" "
+        d=" "
+        e=" "
+        f=" "
+        turns = 9
+        
+        printboard(board)
+        while turns > 0:
+            def printboardtoplay(board):
+                print(" " * 10, board['9'] , x , '|' + board['8'] , y , '|' + board['7'] , z , ' ' )
+                print(" " * 10,' ' + '------' + '------')
+                print(" " * 10,board['6'] , a , '|' + board['5'] , b , '|' + board['4'] , c , ' ' )
+                print(" " * 10,' ' + '------' + '------')
+                print(" " * 10,board['3'] , d , '|' + board['2'] , e , '|' + board['1'] , f , ' ' )
+           
+            print()
+            print()
+            
+            
+            placex=int(input("WHICH PLACE DO YOU WANT ME TO PLACE X AT:- "))
+            
+            if placex == 1:
+                if f == "O" :
+                    print("The place is already taken")
+                    f == "O"
+                    break
+                    
+                
+                            
+                        
+                        
+                else:
+                    f = "X"
+                    
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+            if placex == 2:
+                if e == "O" :
+                    print("The place is already taken")
+                    break
+                
+                else:
+                    e = "X"
+                    
+                    print()
+                    print()
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+            if placex == 3:
+                if d == "O" :
+                    print("The place is already taken")
+                    break
+                
+                else:
+                    d = "X"
+                    
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+            if placex == 4:
+                if c == "O" :
+                    print("The place is already taken")
+                    break
+            
+                else:
+                    c = "X"
+                    
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+            if placex == 5:
+                if b == "O" :
+                    print("The place is already taken")
+                    break
+            
+                else:
+                    b = "X"
+                    
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+            if placex == 6:
+                if a == "O" :
+                    print("The place is already taken")
+                    break
+            
+                else:
+                    a = "X"
+                    
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+            if placex == 7:
+                if z == "O" :
+                    print("The place is already taken")
+                    break
+            
+                else:
+                    z = "X"
+                    
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+            if placex == 8:
+                if y == "O" :
+                    print("The place is already taken")
+                    break
+            
+                else:
+                    y = "X"
+                    
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                
+                    print()
+                    print()
+            if placex == 9:
+                
+                if x == "O" :
+                    print("The place is already taken")
+                    break
+            
+                else:
+                    x = "X"
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    clear()
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                    printboardtoplay(board)
+                    print()
+                    print()
+                    
+                    print()
+                    print()
+                
+                    
+                
+            
+            turns-=1
+            if x == 'X' and b == 'X' and f == 'X':
+                    print(PLAYER1,"HAS WON THE GAME")
+                    break
+            elif x == 'X' and y == 'X' and z == 'X':
+                print(PLAYER1,"HAS WON THE GAME")
+                break
+            elif a == 'X' and b == 'X' and c == 'X':
+                print(PLAYER1,"HAS WON THE GAME")
+                break
+            elif d == 'X' and e == 'X' and f == 'X':
+                print(PLAYER1,"HAS WON THE GAME")
+                break
+            elif z == 'X' and b == 'X' and d == 'X':
+                print(PLAYER1,"HAS WON THE GAME")
+                break
+            
+            
+            
+            
+            if turns > 0:
+                print()
+                print()
+                
+                print()
+                print()
+                placeO=int(input("WHERE DO YOU WANT ME TO PLACE O AT:- "))
+                
+                if placeO == 1:
+                    if f == "X" :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        f = 'O'
+                        
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                if placeO == 2:
+                    if e == "X"  :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        e = 'O'
+                        
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                if placeO == 3:
+                    if d == "X"  :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        d = 'O'
+                        
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                if placeO == 4:
+                    if c == "X"  :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        c = 'O'
+                        
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                if placeO == 5:
+                    if b == "X"  :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        b = 'O'
+                        
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                if placeO == 6:
+                    if a == "X"  :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        a = 'O'
+                        
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                if placeO == 7:
+                    if z == "X"  :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        z = 'O'
+                        
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                if placeO == 8:
+                    if y == "X"  :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        y = 'O'
+                        
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                if placeO == 9:
+                    
+                    if x == "X"  :
+                        print("The place is already taken")
+                        break
+                    
+                    else:
+                        x = 'O'
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        clear()
+                        print()
+                        print()
+                        
+                        print()
+                        print()
+                        printboardtoplay(board)
+                        print()
+                        print()
+                        print()
+                        print()
+                
+                
+                        
+                
+                            
+               
+                turns -= 1
+                
+                if x == 'O' and b == 'O' and f == 'O':
+                    print(PLAYER2,"HAS WON THE GAME")
+                    break
+                elif x == 'O' and y == 'O' and z == 'O':
+                    print(PLAYER2,"HAS WON THE GAME")
+                    break
+                elif a == 'O' and b == 'O' and c == 'O':
+                    print(PLAYER2,"HAS WON THE GAME")
+                    break
+                elif d == 'O' and e == 'O' and f == 'O':
+                    print(PLAYER2,"HAS WON THE GAME")
+                    break
+                elif z == 'O' and b == 'O' and d == 'O':
+                    print(PLAYER2,"HAS WON THE GAME")
+                    break
+                
+                
+                if placeO == 9 and x == "X" :
+                    print("The place is already taken")
+                    x != "O"
+                    turns += 1
+                
+            else:
+                print("THE GAME IS A DRAW")
+                break
+                
+    play()             
+    h = input("DO YOU WANT TO PLAY AGAIN? ")
+    if h =='yes' or h == "YES" or h == "Yes" or h == "y" or h == "Y":
+            continue
+    else:
+            print("THANK YOU FOR PLAYING TIC TAC TOE")
+    break
